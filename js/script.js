@@ -1,5 +1,13 @@
-/*
-You can import JS files with import { example } from "js/file.js";
-*/
-
-console.log("You can use console.log() to debug your code.");
+var lastScrollTop = 0;
+var div = document.querySelector('.product-details-basket');
+window.addEventListener("scroll",function(){
+var scrollTop = window.pageYOffset || document
+.documentElement.scrollTop;
+if(scrollTop >= 200){
+    div.classList.add("fixed");
+}
+else{
+    div.classList.remove("fixed");
+}
+lastScrollTop = scrollTop;
+});

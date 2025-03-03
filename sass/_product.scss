@@ -25,7 +25,14 @@
         }
         
         img {
-            width: 20%;
+            display: block;
+            margin: 0 auto;
+            width: 40%;
+
+            @include break(tablet) {
+                margin: 0 auto 0 0;
+                width: 25%;
+            }
 
             @include break(medium) {
                 width: 100%;
@@ -118,6 +125,7 @@
     }
     &-basket {
         align-items: flex-start;
+        background-color: white;
         border: solid 1px $border-grey;
         display: flex;
         flex-wrap: wrap;
@@ -126,6 +134,16 @@
 
         @include break(medium) {
             margin: 0;
+        }
+
+        &.fixed {
+            @include break(medium) {
+                right: $gap * 2;
+                position: fixed;
+                top: $gap * 2;
+                width: 380px;
+                z-index: 999;
+            }
         }
     }
     &-price {
@@ -156,8 +174,13 @@
         flex: 0 100%;
         flex-wrap: nowrap;
         gap: $gap;
+        justify-content: center;
         margin: $gap * 1.5 0;
         padding: $gap * 1.5 0;
+
+        @include break(medium) {
+
+        }
 
         .amount {
             align-items: center;
