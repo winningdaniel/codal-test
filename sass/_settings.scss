@@ -1,0 +1,31 @@
+// Layout
+$gap: 1rem;
+$corner: 2px;
+
+// Colors
+$yellow: #FFBA00;
+$yellow-light: #FFE399;
+$green-dark: #006747;
+$green: #13997C;
+$green-light: #EFFEFA;
+$green-bright: #51F7CE;
+$red: #E63B11;
+$black: #222222;
+$blue: #98A2B3;
+$dark-grey: #1A1919;
+$mid-grey: #3E4545;
+$light-grey: #EAEAEA;
+$lighter-grey: #F9FAFB;
+$border-grey: #E4E7EC;
+
+// Fonts
+$font-header: "Eurostile", sans-serif;
+$font-body: "MyriadPro", sans-serif;
+
+// Breakpoints
+$breakpoints: (
+    small: 560px,
+    tablet: 700px,
+    medium: 960px,
+    large: 1280px,
+);
